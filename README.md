@@ -6,6 +6,8 @@ consensus algorithm.
 By default, clients share a `dict` data structure, although every python object
 is potentially replicable with the `pickle` state machine.
 
+Zatt was developed as part of my thesis work at the University of Trento, Italy. See [Slides](https://acca.science/slides/thesis/) and [Thesis](https://acca.science/thesis.pdf).
+
 ![Zatt Logo](docs/logo.png?raw=true "Zatt Logo")
 
 Please note that the **client** is compatible with both `python2` and `python3`,
