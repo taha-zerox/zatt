@@ -1,5 +1,4 @@
 FROM python:3.5-alpine
-MAINTAINER Simone Accascina <simon@accascina.me>
 
 ADD . /app/
 WORKDIR /app
