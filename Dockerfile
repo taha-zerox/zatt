@@ -7,4 +7,4 @@ WORKDIR /app
 RUN python setup.py install
 
 EXPOSE 5254
-CMD ["zattd", "-c", "/app/zatt.conf"]
+CMD ["zattd", "-c", "zatt.conf.example"]

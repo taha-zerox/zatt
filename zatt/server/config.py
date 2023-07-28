@@ -21,6 +21,8 @@ parser.add_argument('--remote-port', action='append', default=[], type=int,
 parser.add_argument('--debug', action='store_true', help='Enable debug mode')
 
 
+print("we're here!")
+
 class Config:
     """Collect and merge CLI and file based config.
     This class is a singleton based on the Borg pattern."""
@@ -45,6 +47,8 @@ class Config:
 
         environ = {k[5:].lower(): v for (k, v) in os.environ.items()
                    if k.startswith('ZATT_')}
+        
+        print(os.environ.items())
         if {'address', 'port'}.issubset(environ):
             environ['address'] = (environ['address'], int(environ['port']))
             del environ['port']
@@ -97,3 +101,5 @@ class Config:
         return config
 
 config = Config(None)
+
+print("we're here!")
