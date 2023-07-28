@@ -5,6 +5,6 @@ WORKDIR /app
 
 RUN python setup.py install
 
-WORKDIR client
+WORKDIR zatt_client
 
 CMD ["python", "simple_client.py"]
