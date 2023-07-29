@@ -16,12 +16,12 @@ parser.add_argument('-p', '--port', help='This node port. Default: 5254',
                     type=int)
 parser.add_argument('--remote-address', action='append', default=[],
                     help='Remote node address')
-parser.add_argument('--remote-port', action='append', default=[], type=int,
+parser.add_argument('--remote-port', action='append', default=[],
                     help='Remote node port')
 parser.add_argument('--debug', action='store_true', help='Enable debug mode')
 
 
-print("we're here!")
+
 
 class Config:
     """Collect and merge CLI and file based config.
